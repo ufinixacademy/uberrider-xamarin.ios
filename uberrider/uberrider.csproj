@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+        <ProjectGuid>{C1974890-EDB0-4E19-9C88-4F66C984B5E1}</ProjectGuid>
+        <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <TemplateGuid>{edc1b0fa-90cd-4038-8fad-98fe74adb368}</TemplateGuid>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>uberrider</RootNamespace>
+        <AssemblyName>uberrider</AssemblyName>
+        <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+        <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+        <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+        <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchArch>x86_64</MtouchArch>
+        <MtouchLink>None</MtouchLink>
+        <MtouchDebug>true</MtouchDebug>
+        <CodesignProvision>VS: WildCard Development</CodesignProvision>
+        <CodesignKey>iPhone Developer</CodesignKey>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchLink>None</MtouchLink>
+        <MtouchArch>x86_64</MtouchArch>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\iPhone\Debug</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchArch>ARM64</MtouchArch>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+        <CodesignKey>Apple Development: acxi.app@gmail.com (C69J5Z465C)</CodesignKey>
+        <MtouchDebug>true</MtouchDebug>
+        <CodesignProvision>iOS Team Provisioning Profile: com.ufinix.uberrider</CodesignProvision>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\iPhone\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+        <MtouchArch>ARM64</MtouchArch>
+        <CodesignKey>iPhone Developer</CodesignKey>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Core" />
+        <Reference Include="Xamarin.iOS" />
+        <Reference Include="System.Numerics" />
+        <Reference Include="System.Numerics.Vectors" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+      <PackageReference Include="Xamarin.Firebase.iOS.Database">
+        <Version>6.0.0</Version>
+      </PackageReference>
+      <PackageReference Include="Xamarin.Firebase.iOS.Auth">
+        <Version>6.2.1</Version>
+      </PackageReference>
+      <PackageReference Include="Xamarin.Google.iOS.Maps">
+        <Version>3.1.0</Version>
+      </PackageReference>
+      <PackageReference Include="Xamarin.Google.iOS.Places">
+        <Version>3.5.0</Version>
+      </PackageReference>
+      <PackageReference Include="System.Net.Http">
+        <Version>4.3.4</Version>
+      </PackageReference>
+      <PackageReference Include="Newtonsoft.Json">
+        <Version>12.0.3</Version>
+      </PackageReference>
+      <PackageReference Include="Xam.Plugin.Connectivity">
+        <Version>3.2.0</Version>
+      </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\colorPrimary.colorset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\colorAccent.colorset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\check_empty.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\check_empty.imageset\icons8-round-filled-50.png" />
+        <ImageAsset Include="Assets.xcassets\check_empty.imageset\icons8-round-filled-100.png" />
+        <ImageAsset Include="Assets.xcassets\check_empty.imageset\icons8-round-filled-150.png" />
+        <ImageAsset Include="Assets.xcassets\check_filled.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\check_filled.imageset\icons8-ok-filled-50.png" />
+        <ImageAsset Include="Assets.xcassets\check_filled.imageset\icons8-ok-filled-100.png" />
+        <ImageAsset Include="Assets.xcassets\check_filled.imageset\icons8-ok-filled-150.png" />
+        <ImageAsset Include="Assets.xcassets\colorGray.colorset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\menu_small.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\menu_small.imageset\icons8-menu-50.png" />
+        <ImageAsset Include="Assets.xcassets\menu_small.imageset\icons8-menu-100.png" />
+        <ImageAsset Include="Assets.xcassets\menu_small.imageset\icons8-menu-150.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Resources\" />
+        <Folder Include="Assets.xcassets\colorPrimary.colorset\" />
+        <Folder Include="Assets.xcassets\colorAccent.colorset\" />
+        <Folder Include="Helpers\" />
+        <Folder Include="ViewController\" />
+        <Folder Include="Assets.xcassets\check_empty.imageset\" />
+        <Folder Include="Assets.xcassets\check_filled.imageset\" />
+        <Folder Include="Assets.xcassets\colorGray.imageset\" />
+        <Folder Include="Assets.xcassets\colorGray.colorset\" />
+        <Folder Include="Assets.xcassets\menu_small.imageset\" />
+        <Folder Include="DataModels\" />
+        <Folder Include="EventListener\" />
+        <Folder Include="Sounds\" />
+    </ItemGroup>
+    <ItemGroup>
+        <InterfaceDefinition Include="LaunchScreen.storyboard" />
+        <InterfaceDefinition Include="Main.storyboard" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Info.plist" />
+        <None Include="Entitlements.plist" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Main.cs" />
+        <Compile Include="AppDelegate.cs" />
+        <Compile Include="SceneDelegate.cs" />
+        <Compile Include="Helpers\AppDataHelper.cs" />
+        <Compile Include="ViewController\LoginViewController.cs" />
+        <Compile Include="ViewController\LoginViewController.designer.cs">
+          <DependentUpon>LoginViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ViewController\MainViewController.cs" />
+        <Compile Include="ViewController\MainViewController.designer.cs">
+          <DependentUpon>MainViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ViewController\RegisterViewController.cs" />
+        <Compile Include="ViewController\RegisterViewController.designer.cs">
+          <DependentUpon>RegisterViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ViewController\FindPlacesViewController.cs" />
+        <Compile Include="ViewController\FindPlacesViewController.designer.cs">
+          <DependentUpon>FindPlacesViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="DataModels\Prediction.cs" />
+        <Compile Include="ViewController\placesDatasource.cs" />
+        <Compile Include="PlaceCell.cs" />
+        <Compile Include="PlaceCell.designer.cs">
+          <DependentUpon>PlaceCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="DataModels\PlaceAttribute.cs" />
+        <Compile Include="DataModels\GeocodingParser.cs" />
+        <Compile Include="Helpers\DirectionParser.cs" />
+        <Compile Include="Helpers\MapHelperFunctions.cs" />
+        <Compile Include="DataModels\NewTripDetails.cs" />
+        <Compile Include="EventListener\CreateRequestEventListener.cs" />
+        <Compile Include="EventListener\FindDriverListener.cs" />
+        <Compile Include="DataModels\AvailableDriver.cs" />
+        <Compile Include="DataModels\AcceptedDriver.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Resources\centerimage.png" />
+      <BundleResource Include="GoogleService-Info.plist" />
+      <BundleResource Include="Resources\cover.png" />
+      <BundleResource Include="Resources\greenball.png" />
+      <BundleResource Include="Resources\redball.png" />
+      <BundleResource Include="Resources\marker_green4.png" />
+      <BundleResource Include="Resources\credit_card.png" />
+      <BundleResource Include="Resources\iconimage.png" />
+      <BundleResource Include="Resources\arrowback.png" />
+      <BundleResource Include="Resources\cancel.png" />
+      <BundleResource Include="Sounds\alertios.aiff" />
+      <BundleResource Include="Resources\posimarker.png" />
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uberrider", "uberrider\uberrider.csproj", "{C1974890-EDB0-4E19-9C88-4F66C984B5E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C1974890-EDB0-4E19-9C88-4F66C984B5E1}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+EndGlobal

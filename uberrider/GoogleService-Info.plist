@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>143996500381-4agq9p7ejpikscrp7b9resfhs68a0di1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.143996500381-4agq9p7ejpikscrp7b9resfhs68a0di1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBbsq0KpvDU9Nwh8ma-4E0yJ9lJLtceSSY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>143996500381</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ufinix.uberrider</string>
+	<key>PROJECT_ID</key>
+	<string>uber-clone-ios-78678</string>
+	<key>STORAGE_BUCKET</key>
+	<string>uber-clone-ios-78678.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:143996500381:ios:96a2bae7a51befa95ed774</string>
+	<key>DATABASE_URL</key>
+	<string>https://uber-clone-ios-78678.firebaseio.com</string>
+</dict>
+</plist>
